@@ -4,7 +4,7 @@
 각각의 API는 `README`를 아래로 내리면 예시 코드가 나와있습니다.<br>
 해당 플러그인에는 `필수 플러그인`이 존재합니다.<br>
 
-- Skript
+- Skript (https://github.com/SkriptLang/Skript)
 - SVault (https://github.com/LoneProject/SVault)
 
 그리고, 스크립트 API, 플러그인 API와 관련하여 질문하실거나<br>
