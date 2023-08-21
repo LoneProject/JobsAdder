@@ -60,6 +60,7 @@ Maven에서 API 사용 방법
 </dependencies>
 ```
 
+플러그인 API 예시코드
 ```java
 public class ExampleEvent implements Listener {
 
