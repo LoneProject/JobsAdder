@@ -12,6 +12,15 @@
 
 <br>
 
+# 플러그인 공지
+플러그인 API로 사용하실 때 반드시 `plugin.yml`에 아래 텍스트를 추가해주세요.
+```yaml
+depend:
+  - JobsAdder
+```
+
+<br>
+
 # 플러그인 저작권
 해당 플러그인의 `저작권`은 **lone64**에게 있음을 알립니다.<br>
 **소스 코드**을 사용하실 때는 반드시 `해당 Github의 주소` 또는 `개발자의 닉네임`을 출처로 명시하여 주세요.
@@ -21,6 +30,36 @@
 # 플러그인 API
 플러그인 API에는 직업 단계를 불러올 수 있는 API, 그리고 몇가지의 이벤트가 존재합니다.<br>
 예시 코드는 아래와 같습니다.
+
+Gradle에서 API 사용 방법
+```groovy
+repositories {
+    maven { url "https://repo.loneproject.org/repository/maven-public/" }
+}
+
+dependencies {
+    compileOnly "org.lone64:api-jobsadder:1.0.0a"
+}
+```
+
+Maven에서 API 사용 방법
+```xml
+<repositories>
+    <repository>
+        <id>LoneProject</id>
+        <url>https://repo.loneproject.org/repository/maven-public/</url>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>org.lone64</groupId>
+        <artifactId>api-jobsadder</artifactId>
+        <version>1.0.0a</version>
+    </dependency>
+</dependencies>
+```
+
 ```java
 public class ExampleEvent implements Listener {
 
