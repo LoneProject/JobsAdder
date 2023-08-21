@@ -1,0 +1,123 @@
+# 표시되지 않는 직업 이름
+name: "example"
+
+# 직업 목록에 표시될 직업 아이콘 아이템
+icon: "IRON_PICKAXE"
+
+# 표시되는 직업 이름
+display-name: "광부"
+
+# 직업의 칭호 관련 설정
+prefix-options:
+  enabled: true
+  prefix: "&8[광부] &r"
+  suffix: ""
+
+# 해당 직업을 선택했을 때 실행되는 명령어 목록
+run-commands:
+  - "say Hello World"
+
+# 직업 단계가 최대 단계일 경우 표시되는 아이템 설정
+stage-maximum:
+  item-options:
+    show-type: "BARRIER"
+    show-display: "&c&l광부 7단계"
+    show-lore:
+      - ""
+      - " &c┃ &f직업 혜택: &e광물 7배 지급"
+      - " &c┃ &f해금 금액: &e&lMAX"
+      - " &c┗ &7직업 단계가 최대 단계입니다!"
+      - ""
+
+# 직업마다의 직업 단계 설정
+stage-options:
+  stage_0:
+    required-amount: 0
+    item-options:
+      show-type: "WOODEN_PICKAXE"
+      show-display: "&a&l광부 직업"
+      show-lore:
+        - ""
+        - " &a┃ &f직업 혜택: &e추가적인 광물 지급"
+        - " &a┗ &7직업을 선택하려면 클릭하여 주세요!"
+        - ""
+    default-options:
+      play-sound: "ENTITY_PLAYER_LEVELUP"
+  stage_1:
+    required-amount: 1000
+    item-options:
+      show-type: "WOODEN_PICKAXE"
+      show-display: "&a&l광부 2단계"
+      show-lore:
+        - ""
+        - " &a┃ &f직업 혜택: &e광물 2배 지급"
+        - " &a┃ &f해금 금액: &e{@amount}원"
+        - " &a┗ &7직업 단계를 해금하려면 클릭해주세요!"
+        - ""
+    default-options:
+      play-sound: "ENTITY_PLAYER_LEVELUP"
+  stage_2:
+    required-amount: 3000
+    item-options:
+      show-type: "STONE_PICKAXE"
+      show-display: "&a&l광부 3단계"
+      show-lore:
+        - ""
+        - " &a┃ &f직업 혜택: &e광물 3배 지급"
+        - " &a┃ &f해금 금액: &e{@amount}원"
+        - " &a┗ &7직업 단계를 해금하려면 클릭해주세요!"
+        - ""
+    default-options:
+      play-sound: "ENTITY_PLAYER_LEVELUP"
+  stage_3:
+    required-amount: 5000
+    item-options:
+      show-type: "IRON_PICKAXE"
+      show-display: "&a&l광부 4단계"
+      show-lore:
+        - ""
+        - " &a┃ &f직업 혜택: &e광물 4배 지급"
+        - " &a┃ &f해금 금액: &e{@amount}원"
+        - " &a┗ &7직업 단계를 해금하려면 클릭해주세요!"
+        - ""
+    default-options:
+      play-sound: "ENTITY_PLAYER_LEVELUP"
+  stage_4:
+    required-amount: 7000
+    item-options:
+      show-type: "GOLDEN_PICKAXE"
+      show-display: "&a&l광부 5단계"
+      show-lore:
+        - ""
+        - " &a┃ &f직업 혜택: &e광물 5배 지급"
+        - " &a┃ &f해금 금액: &e{@amount}원"
+        - " &a┗ &7직업 단계를 해금하려면 클릭해주세요!"
+        - ""
+    default-options:
+      play-sound: "ENTITY_PLAYER_LEVELUP"
+  stage_5:
+    required-amount: 10000
+    item-options:
+      show-type: "DIAMOND_PICKAXE"
+      show-display: "&a&l광부 6단계"
+      show-lore:
+        - ""
+        - " &a┃ &f직업 혜택: &e광물 6배 지급"
+        - " &a┃ &f해금 금액: &e{@amount}원"
+        - " &a┗ &7직업 단계를 해금하려면 클릭해주세요!"
+        - ""
+    default-options:
+      play-sound: "ENTITY_PLAYER_LEVELUP"
+  stage_6:
+    required-amount: 20000
+    item-options:
+      show-type: "NETHERITE_PICKAXE"
+      show-display: "&a&l광부 7단계"
+      show-lore:
+        - ""
+        - " &a┃ &f직업 혜택: &e광물 7배 지급"
+        - " &a┃ &f해금 금액: &e{@amount}원"
+        - " &a┗ &7직업 단계를 해금하려면 클릭해주세요!"
+        - ""
+    default-options:
+      play-sound: "ENTITY_PLAYER_LEVELUP"

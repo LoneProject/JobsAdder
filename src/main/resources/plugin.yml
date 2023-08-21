@@ -1,0 +1,21 @@
+name: JobsAdder
+main: org.lone64.jobsadder.JobsAdder
+author: lone64
+version: 1.0.0
+api-version: '1.20'
+description: 커스텀 직업 관리 시스템 플러그인
+depend:
+  - SVault
+  - Skript
+permissions:
+  ja.admin:
+    default: op
+    description: JobsAdder 플러그인 관리자 권한
+commands:
+  직업:
+    description: JobsAdder 플러그인 직업 선택 명령어
+  직업해금:
+    description: JobsAdder 플러그인 직업 선택 명령어
+  직업관리:
+    permission: ja.admin
+    description: JobsAdder 플러그인 관리자 명령어

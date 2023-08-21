@@ -1,0 +1,14 @@
+name: "English"
+
+cannot-use-this-command: "{@p} &7You cannot use this command."
+none-argument-command: "{@p} &7Not a none argument command."
+player-permission: "{@p} &7You don't have permissions of this command."
+unknown-command: "{@p} &7Unknown Command."
+reload-completed: "{@p} &eJobAdder &fwas reloaded!"
+
+amount-not-enough: "{@p} &7You are money is not enough."
+player-select-job: "{@p} &e{@job} &fwas selected!"
+not-selected-job: "{@p} &7You are not selected job."
+already-selected-job: "{@p} &7You already selected job."
+upgrade-job-stage: "{@p} &fUnlocked to &e{@job} {@stage}"
+upgrade-job-maximum: "{@p} &7You've already reached the maximum level of your job."
