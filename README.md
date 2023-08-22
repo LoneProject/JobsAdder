@@ -10,7 +10,7 @@
 그리고, 스크립트 API, 플러그인 API와 관련하여 질문하실거나<br>
 궁금하신게 있으시다면 디스코드 `lone64`으로 연락해주세요.<br><br>
 
-유튜브 영상 : https://youtu.be/CSGefu3zSUs
+- 유튜브 영상 : https://youtu.be/CSGefu3zSUs
 
 <br>
 
