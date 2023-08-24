@@ -1,0 +1,109 @@
+# 표시되지 않는 직업 이름
+name: "farmer"
+
+# 직업 목록에 표시될 직업 아이콘 아이템
+icon: "IRON_HOE"
+
+# 표시되는 직업 이름
+display-name: "농부"
+
+# 직업의 칭호 관련 설정
+prefix-options:
+  enabled: false
+  prefix: "&a[농부] &r"
+  suffix: ""
+
+# 해당 직업을 선택했을 때 실행되는 명령어 목록
+run-commands: []
+
+# 직업 단계가 최대 단계일 경우 표시되는 아이템 설정
+stage-maximum:
+  item-options:
+    show-type: "BARRIER"
+    show-display: "&c&l농부 6단계"
+    show-lore:
+      - ""
+      - " &c┃ &f직업 혜택: &e작물 6배 지급"
+      - " &c┃ &f해금 금액: &e&lMAX"
+      - " &c┗ &7직업 단계가 최대 단계입니다!"
+      - ""
+
+# 직업마다의 직업 단계 설정
+stage-options:
+  stage_0:
+    required-amount: 1000
+    item-options:
+      show-type: "WOODEN_HOE"
+      show-display: "&a&l농부 직업"
+      show-lore:
+        - ""
+        - " &a┃ &f직업 혜택: &e추가적인 작물 지급"
+        - " &a┗ &7직업을 선택하려면 클릭하여 주세요!"
+        - ""
+    default-options:
+      play-sound: "ENTITY_PLAYER_LEVELUP"
+  stage_1:
+    required-amount: 1000
+    item-options:
+      show-type: "WOODEN_HOE"
+      show-display: "&a&l농부 2단계"
+      show-lore:
+        - ""
+        - " &a┃ &f직업 혜택: &e작물 2배 지급"
+        - " &a┃ &f해금 금액: &e{@amount}원"
+        - " &a┗ &7직업 단계를 해금하려면 클릭해주세요!"
+        - ""
+    default-options:
+      play-sound: "ENTITY_PLAYER_LEVELUP"
+  stage_2:
+    required-amount: 3000
+    item-options:
+      show-type: "STONE_HOE"
+      show-display: "&a&l농부 3단계"
+      show-lore:
+        - ""
+        - " &a┃ &f직업 혜택: &e작물 3배 지급"
+        - " &a┃ &f해금 금액: &e{@amount}원"
+        - " &a┗ &7직업 단계를 해금하려면 클릭해주세요!"
+        - ""
+    default-options:
+      play-sound: "ENTITY_PLAYER_LEVELUP"
+  stage_3:
+    required-amount: 5000
+    item-options:
+      show-type: "IRON_HOE"
+      show-display: "&a&l농부 4단계"
+      show-lore:
+        - ""
+        - " &a┃ &f직업 혜택: &e작물 4배 지급"
+        - " &a┃ &f해금 금액: &e{@amount}원"
+        - " &a┗ &7직업 단계를 해금하려면 클릭해주세요!"
+        - ""
+    default-options:
+      play-sound: "ENTITY_PLAYER_LEVELUP"
+  stage_4:
+    required-amount: 7000
+    item-options:
+      show-type: "GOLDEN_HOE"
+      show-display: "&a&l농부 5단계"
+      show-lore:
+        - ""
+        - " &a┃ &f직업 혜택: &e작물 5배 지급"
+        - " &a┃ &f해금 금액: &e{@amount}원"
+        - " &a┗ &7직업 단계를 해금하려면 클릭해주세요!"
+        - ""
+    default-options:
+      play-sound: "ENTITY_PLAYER_LEVELUP"
+  stage_5:
+    required-amount: 10000
+    item-options:
+      show-type: "DIAMOND_HOE"
+      show-display: "&a&l농부 6단계"
+      show-lore:
+        - ""
+        - " &a┃ &f직업 혜택: &e작물 6배 지급"
+        - " &a┃ &f해금 금액: &e{@amount}원"
+        - " &a┗ &7직업 단계를 해금하려면 클릭해주세요!"
+        - ""
+    default-options:
+      play-sound: "ENTITY_PLAYER_LEVELUP"
