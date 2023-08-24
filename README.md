@@ -64,19 +64,45 @@ Maven에서 API 사용 방법
 ```java
 public class ExampleEvent implements Listener {
 
-  @EventHandler
-  public void onChangedJobStage(ChangedJobStageEvent event) {
-    Player player = event.getPlayer();
-    int stage = event.getStage();
-    // 해당 이벤트는 플레이어의 직업 단계가 변경되었을 때의 발동되는 이벤트입니다.
-  }
+	@EventHandler
+	public void onChangedJobStage(ChangedJobStageEvent event) {
+		Player player = event.getPlayer();
+		int stage = event.getStage();
+		// 해당 이벤트는 플레이어의 직업 단계가 변경되었을 때의 발동되는 이벤트입니다.
+	}
 
-  @EventHandler
-  public void onSelectedJob(SelectedJobEvent event) {
-    Player player = event.getPlayer();
-    int stage = event.getStage();
-    // 해당 이벤트는 플레이어가 직업을 선택했을 때 발동되는 이벤트입니다.
-  }
+	@EventHandler
+	public void onSelectedJob(SelectedJobEvent event) {
+		Player player = event.getPlayer();
+		int stage = event.getStage();
+		// 해당 이벤트는 플레이어가 직업을 선택했을 때 발동되는 이벤트입니다.
+	}
+
+}
+```
+
+```java
+public class ExampleExpression {
+
+	// 직업 단계를 stage 값으로 설정합니다.
+	public static void set(OfflinePlayer player, int stage) {
+		JobStage.set(player, stage);
+	}
+
+	// 직업 단계를 stage 값만큼 추가합니다.
+	public static void add(OfflinePlayer player, in stage) {
+		JobStage.add(player, stage);
+	}
+
+	// 직업 단계를 stage 값만큼 차감합니다.
+	public static void subtract(OfflinePlayer player, in stage) {
+		JobStage.subtract(player, stage);
+	}
+
+	// 직업 단계를 가져옵니다.
+	public static int get(OfflinePlayer player) {
+		return JobStage.get(player);
+	}
 
 }
 ```
