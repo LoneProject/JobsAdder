@@ -90,12 +90,12 @@ public class ExampleExpression {
 	}
 
 	// 직업 단계를 stage 값만큼 추가합니다.
-	public static void add(OfflinePlayer player, in stage) {
+	public static void add(OfflinePlayer player, int stage) {
 		JobStage.add(player, stage);
 	}
 
 	// 직업 단계를 stage 값만큼 차감합니다.
-	public static void subtract(OfflinePlayer player, in stage) {
+	public static void subtract(OfflinePlayer player, int stage) {
 		JobStage.subtract(player, stage);
 	}
 
