@@ -21,7 +21,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly "org.lone64:Vault:1.0.1-alpha"
+    compileOnly "org.lone64:api-vault:1.0.1a"
     compileOnly "org.projectlombok:lombok:1.18.26"
     compileOnly "io.papermc.paper:paper-api:1.20.1-R0.1-SNAPSHOT"
     implementation "com.github.SkriptLang:Skript:2.7.0-beta3"
